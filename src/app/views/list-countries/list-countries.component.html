@@ -1,0 +1,58 @@
+<div class="content" role="main">
+
+    <!-- Application introduction -->
+    <h2>Country Search v0.01</h2>
+    <p>Angular application that allows users to search for a country</p>
+
+    <!-- Country Input -->
+    <form class="example-form" style="margin-top:20px;">
+        <mat-form-field class="example-full-width">
+            <mat-label style="text-align: center;">Search a country..</mat-label>
+            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="searchText" type="text" matInput>
+        </mat-form-field>
+    </form>
+
+    <div [class.active]="active === i" *ngFor="let country of countries | appFilter: searchText;" appHighlight
+        [searchedWord]="searchText">
+
+          <!-- Country Card design -->
+        <div class="container_card">
+            <div class="card card2">
+                <h2>{{country.name}}</h2>
+                <h4>{{country.capital}} {{country.subregion}} - population: {{country.population}}</h4>
+                <i class="fas fa-arrow-right"></i>
+                <p>#Alliance Insurance</p>
+                <div class="pic"></div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
+                </button>
+            </div>
+        </div>
+        <!-- End Country Card design -->
+
+        <br><br>
+    </div>
