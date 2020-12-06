@@ -1,3 +1,10 @@
+/*
+View Component that renders the list of countries
+and input feild
+
+- Daniel Goncalves
+*/
+
 // Importing of necessary modules
 import { Component, OnInit } from '@angular/core';
 import { ApiRequestsService } from '../../services/api_requests.service'
@@ -32,6 +39,7 @@ export class ListCountriesComponent implements OnInit {
      }); 
   }
 
+  // Function to record key typings
   onKey(event: any) { 
     this.searchText += event.target.value + ' | ';
   }

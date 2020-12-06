@@ -1,3 +1,11 @@
+/*
+API service that interacts with the countries API
+and retreives the list of countries for component
+to render
+
+- Daniel Goncalves
+*/
+
 // Importing of necessary modules
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
